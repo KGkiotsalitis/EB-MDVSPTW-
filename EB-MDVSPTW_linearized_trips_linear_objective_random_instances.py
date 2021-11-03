@@ -26,7 +26,7 @@ model = gp.Model()
 #Z=(1,2,3,4) #set of chargers
 #F=[1001,1011,1002,1012,1003,1013,1004,1014] #set of charging events
 data_header_charg_event=np.loadtxt('Data/D2_S2_C10_a_charging_event_sequence.txt',max_rows=1,dtype=int)
-data_main_body_charg_event=np.loadtxt('Data/D2_S2_C10_a_charging_event_sequence.txt',skiprows=1,dtype=int)
+data_main_body_charg_event=np.loadtxt('Data/D2_S2_C10_charging_event_sequence.txt',skiprows=1,dtype=int)
 F_end = data_header_charg_event #last charging events at each charger
 print('F_end',F_end)
 omega={}
